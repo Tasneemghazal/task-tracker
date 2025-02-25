@@ -1,3 +1,4 @@
+import TaskCard from "@/components/task-card/TaskCard";
 import { ITask } from "@/types";
 import { fetchTodos } from "@/utils/todos";
 
@@ -11,12 +12,10 @@ export default async function Home() {
         </h1>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2">
-        {data.map((task) => (
-          <div key={task.id} className="border p-4 rounded">
-            <span className="font-semibold">{task.id}:</span> 
-            <h3>{task.title}</h3>
-            <span>{task.completed? "Completed":"Pending"}</span>
-          </div>
+        {data.map((task, index) => (
+          
+            <TaskCard key={index} id={task.id} title={task.title} completed={task.completed} userId={task.userId}/>
+          
         ))}
       </div>
     </div>
