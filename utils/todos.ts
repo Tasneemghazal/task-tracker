@@ -12,3 +12,18 @@ export async function fetchTodos() {
     notFound();
   }
 }
+
+export async function fetchTodo(id: number){
+    try {
+      const res = await fetch(
+        `https://jsonplaceholder.typicode.com/todos/${id}`
+      );
+      if (!res.ok) throw new Error("Failed to fetch tasks");
+      return await res.json();
+    } catch (error) {
+      console.error("Error fetching task details:", error);
+      notFound();
+    }
+  }
+
+
