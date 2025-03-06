@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Task Tracker
+============
 
-## Getting Started
+🚀 **Task Tracker** is a lightweight and efficient web application for managing tasks. It fetches tasks from an API, assigns priority levels dynamically, and displays them with priority-based styling.
 
-First, run the development server:
+✨ Features
+----------
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+*   ✅ Fetches tasks from an external API.
+    
+*   🔥 Assigns priority levels (**High, Medium, Low**) to tasks dynamically.
+    
+*   🎨 Uses priority-based styling for better visibility.
+    
+*   ❌ Implements a custom error page for handling API failures.
+    
+*   ⏳ Displays a loading state while fetching data.
+    
+*   📋 Allows users to copy task titles to the clipboard.
+    
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🛠 Technologies Used
+--------------------
+*   **⚡ Next.js** (React Framework for Server Components)
+    
+*   **🛡 TypeScript** (Ensuring type safety)
+    
+*   **🎨 Tailwind CSS** (Modern styling framework)
+    
+*   **🔄 Next.js Data Fetching** (Fetching API data on the server side)
+    
+*   **📋 Clipboard API** (Copy task titles effortlessly)
+    
+*   **🔦 Lucide React** (Icon library for UI enhancement)
+    
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📥 Installation & Setup
+-----------------------
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  git clone https://github.com/Tasneemghazal/task-tracker.git
+    
+2.  npm install
+    
+3.  npm run dev
+    
+4.  Open your browser and visit **http://localhost:3000**.
+    
 
-## Learn More
+🔗 API Integration
+------------------
 
-To learn more about Next.js, take a look at the following resources:
+This application fetches tasks from **JSONPlaceholder**: `
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Tasks are extended with a **priority** field before rendering.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+🚀 Future Enhancements
+----------------------
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+*   🔑 Implement authentication and user roles.
+    
+*   📝 Allow users to **create, edit, delete** tasks.
+    
+*   🌍 Replace JSONPlaceholder with a **custom backend API**.
+    
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📜 License
+----------
+
+This project is open-source and licensed under the **MIT License**.
+
+### 🎉 Get Started and Happy Coding! 🚀
